@@ -1,0 +1,19 @@
+package com.app.java.oops.inheritance.single;
+
+public class SingleInheritanceExample {
+
+	public static void main(String[] args) {
+		User u = new User();
+		u.setAddress1("Abc");
+		u.setAddress2("Test");
+		u.setCode(5432);
+		u.setName("User-954");
+		System.out.println(u);
+		
+		User u1 = (User) new Address();
+		System.out.println(u1);
+		
+		Address u2 = (User) new User();
+		System.out.println(u1);
+	}
+}
